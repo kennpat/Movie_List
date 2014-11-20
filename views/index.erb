@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Movies Catalog</title></head>
+
+<body>
+	<h1>List of Available Flicks</h1>
+
+	<ul>
+		<h3>Movies!</h3>
+		<% @movies.each do |movie| %>
+			<li>
+				<a href= '/movies/<%= movie[:id] %>'><%= movie[:title] %></a>
+				
+			</li>
+		<% end %>
+
+	</ul>
+</body>
+
+
+
+</html>
